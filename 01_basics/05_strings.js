@@ -28,5 +28,13 @@ const url = " https:/Nihal.com/%20Sandhu"
 console.log(url.replace('%20',"_"))
 console.log(url.includes('sundar'))
 
-console.log(gameName.split('_'));
+console.log(gameName.split('_'));    // convert a string into array 
 
+// q Question For myself  
+
+// Reverse  a string 
+
+let string = "String "
+
+let ReverseThis  = string.split('').reverse().join(' ')
+console.log(ReverseThis)
