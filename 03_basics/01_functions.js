@@ -43,3 +43,38 @@ function logginusserMessage(username = " Sam"){
  
 console.log(logginusserMessage("Nihal"))
 // console.log(logginusserMessage())
+
+function calculateCartPrice(...num1){
+    return num1;
+}
+
+// console.log(calculateCartPrice(200,400,500,2000))
+
+
+// functions with objects  
+const user = {
+    username : "hitesh",
+    price:199
+}
+
+
+function handleObject(anyobject){
+    console.log(`username is ${anyobject.username} and price is ${anyobject.price}`  )
+}
+// handleObject(user) 
+handleObject({           // we can pass directly objefct in rguments 
+    username:"nihal",
+    price:399
+})
+
+
+
+// Arrays with objects 
+
+const myNewArray = [200,400,100,600]
+function retturnSecondValue(getArray){
+    return getArray[1]
+}
+
+// console.log(retturnSecondValue(myNewArray))
+console.log(retturnSecondValue([200,400,500,1000]))
