@@ -48,8 +48,47 @@ const chai = () =>{
 // const addTwo = (num1,num2)=>  (num1+num2) // dont have to use return keyword 
 
 
-const addTwo = (num1,num2)=> (  {
-    username: "hitesh"
-})
+// const addTwo = (num1,num2)=> (  {
+//     username: "hitesh"
+// })
 
-console.log(addTwo(4,4))
+// console.log(addTwo(4,4))
+
+
+// context ka mtlb hai simple values 
+
+// console.log(this)  // in node environment this will refer empty object if there was no context availible
+
+
+ function chai1(){
+    let username = 'hitesh'
+    console.log(this)
+}
+const chai2 = function(){
+    let username = 'hitesh'
+    console.log(this)
+}
+
+const chai3 = () => {
+    let username = 'hitesh'
+    console.log(this)
+}
+// chai1()
+// chai2()
+// chai3()
+
+
+//  using arrow function 
+
+let arrowFunction = (num1,num2 )=> num1 * num2   // in implicit return arrow function return keyword is not used 
+let arrowFunctiontwo = (num1,num2 )=> (num1 * num2) // we can wrap this in paranthisis()
+console.log(arrowFunction(4,9))
+console.log(arrowFunction(10,9))
+console.log(arrowFunctiontwo(100,9))
+
+
+
+// how to return object in arrow function  
+// we have to wrap object in paranthisis  
+const funcreturnobj = ()=> ({username:"nihal"})
+console.log(funcreturnobj())
