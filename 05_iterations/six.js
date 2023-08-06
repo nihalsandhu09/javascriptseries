@@ -1,14 +1,14 @@
 // map filter reduce 
 
-// const coding = ["js","ruby","java","python","cpp"]
+const coding = ["js","ruby","java","python","cpp"]
 
-//  const values = coding.forEach((item)=>{
-//     // console.log(item)
-//     return item
-// })
-// console.log(values);
+ const values = coding.forEach((item)=>{
+    console.log(item)
+    return item
+})
+console.log(values);
 
-const myNums = [1,2,3,4,5,6,7,8,9,10]
+// const myNums = [1,2,3,4,5,6,7,8,9,10]
 
 //  let newNum = myNums.filter((num)=>{
 //   return num > 5
@@ -41,10 +41,10 @@ const books = [
 //   const userbooks = books.filter((bk)=>{
 //       return bk.genre == "History"
 //   })
-  const userbooks = books.filter((bk)=>{
-    return bk.publish > 1995 && bk.genre === "History"
-  })
+  // const userbooks = books.filter((bk)=>{
+  //   return bk.publish > 1995 && bk.genre === "History"
+  // })
 
-  console.log(userbooks)
+  // console.log(userbooks)
 
 
