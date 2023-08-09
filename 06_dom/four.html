@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Dom </title>
+</head>
+<body style = "background-color: #212121;color: white;">
+    <ul class="language" > 
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langname){
+const li = document.createElement('li');
+li.innerHTML = `${langname}`
+document.querySelector('.language').
+appendChild(li)
+    }
+    addLanguage("python")
+    addLanguage("C++")
+
+// optimised for bigger web applications  
+    function addOptiLanguage(langName){
+        const li = document.createElement("li");
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+addOptiLanguage("golang")
+
+
+// Edit 
+const secondLang = document.querySelector('li:nth-child(2)')
+const newli = document.createElement("li")
+newli.textContent = "mojo"
+secondLang.replaceWith(newli)
+// secondLang.appendChild(document.createTextNode())
+
+// edt 
+// const  firstLang  =  document.querySelector('li:nth-child(1)')
+// const newli1 =document.createElement("li")
+// newli1.textContent = "typeScript"
+// firstLang.replaceWith(newli1)
+
+// edit 
+const firstlang1 = document.querySelector('li:first-child')
+firstlang1.outerHTML = '<li> typeScript </li>'
+
+// remove 
+const lastlanguage =document.querySelector("li:last-child")
+lastlanguage.remove() 
+</script>
+</html>
